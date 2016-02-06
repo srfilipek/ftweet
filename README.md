@@ -2,12 +2,12 @@
 This is a simple python script that allows you to tweet status updates from
 the command line.
 
-The script will post each line of the file as an individual status update. If a
-line is more than 140 characters in length, the update may fail. The script can
-automatically truncate a line to this limit with the `--truncate` command line
-option.
+The script will post each line of a file (such as standard input) as an
+individual status update. If a line is more than 140 characters in length, the
+update may fail. The script can automatically truncate a line to this limit with
+the `--truncate` command line option.
 
-This script perform no interpretation of the input nor any scrubbing of the
+This script performs no interpretation of the input nor any scrubbing of the
 text for special characters.
 
 # Prerequisites #
@@ -42,7 +42,7 @@ Note that the keys must be quoted strings. See http://json.org for more
 information about the JSON format.
 
 By default, ftweet looks for the configuration file in the user's home
-directory named `.ftweet`. You can also pass in a configuration file
+directory named `~/.ftweet`. You can also pass in a configuration file
 using command line argument `--config`.
 
 # Example Use #
